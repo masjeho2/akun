@@ -1,0 +1,127 @@
+proxies:
+- name: opok-nusa
+  server: rajamitra.wesi.fun      
+  port: 80
+  type: vmess
+  uuid: f157058e-6117-4583-b3dc-b1615a84ea4c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: tsel.me
+  network: ws
+  ws-opts:
+    path: http://tsel.me/worryfree
+    headers:
+      host: beon.wesi.fun      
+  udp: true
+
+- name: nusa-vison
+  server: 104.16.51.111
+  port: 443
+  type: vmess
+  uuid: f157058e-6117-4583-b3dc-b1615a84ea4c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: beon.wesi.fun
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      host: beon.wesi.fun
+  udp: true
+- name: nusa-vison+
+  server: 104.21.235.171
+  port: 443
+  type: vmess
+  uuid: f157058e-6117-4583-b3dc-b1615a84ea4c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: beon.wesi.fun
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      host: beon.wesi.fun
+  udp: true
+- name: opok-sg
+  server: vpn1.animstrim.my.id
+  port: 80
+  type: vmess
+  uuid: 01daf38d-daa2-44e9-b0a7-5c292ae5b690
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername:
+  network: ws
+  ws-opts:
+    path: http://tsel.me/worryfree
+    headers:
+      host: vpn1.animstrim.my.id
+  udp: true
+- name: beon-vison
+  type: vmess
+  server: 104.21.235.171
+  port: 80
+  uuid: f157058e-6117-4583-b3dc-b1615a84ea4c
+  alterId: 0
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  servername: rajamitra.wesi.fun
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: rajamitra.wesi.fun
+  udp: true
+- name: VMESS-SG-vison
+  type: vmess
+  server: 104.21.235.171
+  port: 80
+  uuid: 7bcc351b-c55a-4c87-914d-b42d5dbcb3a9
+  alterId: 0
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  servername: vpn.animstrim.my.id
+  network: ws
+  ws-opts:
+    path: /worryfree
+    headers:
+      Host: vpn.animstrim.my.id
+  udp: true
+- name: "TROJAN-WS-YT"
+  server: 104.21.235.172
+  port: 443
+  type: trojan
+  password: f157058e-6117-4583-b3dc-b1615a84ea4c
+  tls: true
+  skip-cert-verify: false
+  sni: rajamitra.wesi.fun
+  network: ws
+  ws-opts:
+    path: /wesi-yo-wesi
+    headers:
+      Host: rajamitra.wesi.fun
+  udp: true
+
+- name: "TROJAN-WS-18"
+  server: vpn.animstrim.my.id
+  port: 443
+  type: trojan
+  password: 272c15ec-f11b-4834-b3ed-0abbdfb201eb
+  tls: true
+  skip-cert-verify: true
+  sni: id.stream.music.joox.com
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: vpn.animstrim.my.id
+  udp: true
