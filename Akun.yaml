@@ -1,5 +1,5 @@
 proxies:
-- name: opok-nusa
+- name: opok-nusa+
   server: rajamitra.wesi.fun      
   port: 80
   type: vmess
